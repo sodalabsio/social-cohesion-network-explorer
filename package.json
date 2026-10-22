@@ -1,0 +1,14 @@
+{
+  "name": "social-cohesion-network-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A source-linked explorer of social cohesion networks, with guided stories and weekly network measures.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node scripts/check-data.mjs",
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs src",
+    "preview": "node scripts/serve.mjs dist"
+  }
+}

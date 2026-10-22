@@ -1,0 +1,1270 @@
+{
+  "meta": {
+    "source": "draft_submission_docs/network_geelong_UID/geelong_localise_UIDs.dta",
+    "sourceSha256": "81eedb0b1827e3b5cfa76083fbf7521e4f30d4c89099b783fd8a4e859ee25ca0",
+    "csvSha256": "890dfc3af18b8e65c99452cb24610914e7a5ad4d32f5b1d1c71dfe2de316b17a",
+    "actorClassificationSha256": "dc3ffa3f0728694d802a0d4d968b87d3e9605ca4e5d6c6b823da7a2b61a8f940",
+    "summary": {
+      "actors": 2221,
+      "pairs": 2988,
+      "countedTies": 4291,
+      "articles": 2506,
+      "sourceRows": 4365
+    },
+    "notice": "Research preview. Selected excerpts are stored extraction records, not independently checked transcriptions of original articles. Counts reproduce the source edge export. Article publication rights and canonical-name mappings require confirmation before public release. This exhibit is not the thesis rolling Social Cohesion Network Index."
+  },
+  "nodes": [
+    {
+      "id": "1001",
+      "label": "Australian Government",
+      "scope": "Federal",
+      "type": "Government"
+    },
+    {
+      "id": "1004",
+      "label": "Victorian Government",
+      "scope": "State",
+      "type": "Government"
+    },
+    {
+      "id": "2001",
+      "label": "Geelong community",
+      "scope": "Community",
+      "type": "Local Community"
+    },
+    {
+      "id": "2005",
+      "label": "Norlane community",
+      "scope": "Community",
+      "type": "Local Community"
+    },
+    {
+      "id": "2070",
+      "label": "Geelong Business Community",
+      "scope": "Community",
+      "type": "Business"
+    },
+    {
+      "id": "2072",
+      "label": "City of Greater Geelong Council, Mayor and Staff",
+      "scope": "Local",
+      "type": "Government"
+    },
+    {
+      "id": "2073",
+      "label": "Give Where You Live",
+      "scope": "Local",
+      "type": "Charities, NFP or Community Service Organisations"
+    },
+    {
+      "id": "2074",
+      "label": "G21 Geelong Region Alliance",
+      "scope": "Local",
+      "type": "Government"
+    },
+    {
+      "id": "2080",
+      "label": "Feed Geelong",
+      "scope": "Local",
+      "type": "Charities, NFP or Community Service Organisations"
+    },
+    {
+      "id": "2082",
+      "label": "Geelong Community Foundation",
+      "scope": "Local",
+      "type": "Charities, NFP or Community Service Organisations"
+    },
+    {
+      "id": "2123",
+      "label": "Alcoa workers",
+      "scope": "Community",
+      "type": "Local Community"
+    },
+    {
+      "id": "2296",
+      "label": "Baptcare",
+      "scope": "Local",
+      "type": "Charities, NFP or Community Service Organisations"
+    },
+    {
+      "id": "2426",
+      "label": "Bridgelink Program",
+      "scope": "Local",
+      "type": "Charities, NFP or Community Service Organisations"
+    },
+    {
+      "id": "2644",
+      "label": "Deakin University",
+      "scope": "State",
+      "type": "Education"
+    },
+    {
+      "id": "2727",
+      "label": "Geelong emergency food relief agencies",
+      "scope": "Local",
+      "type": "Charities, NFP or Community Service Organisations"
+    },
+    {
+      "id": "2750",
+      "label": "Eunike Program",
+      "scope": "Local",
+      "type": "Local Community"
+    },
+    {
+      "id": "2771",
+      "label": "FareShare",
+      "scope": "Federal",
+      "type": "Business"
+    },
+    {
+      "id": "2796",
+      "label": "Ford Transition Project",
+      "scope": "Federal",
+      "type": "Business"
+    },
+    {
+      "id": "2821",
+      "label": "G21 Region Opportunities for Work (GROW) program",
+      "scope": "Local",
+      "type": "Government"
+    },
+    {
+      "id": "2926",
+      "label": "Geelong flood victims",
+      "scope": "Community",
+      "type": "Local Community"
+    },
+    {
+      "id": "2928",
+      "label": "Geelong Food Relief Centre",
+      "scope": "Local",
+      "type": "Charities, NFP or Community Service Organisations"
+    },
+    {
+      "id": "3066",
+      "label": "Geelong Tech School",
+      "scope": "Local",
+      "type": "Education"
+    },
+    {
+      "id": "3067",
+      "label": "The Gordon (TAFE)",
+      "scope": "Local",
+      "type": "Education"
+    },
+    {
+      "id": "3271",
+      "label": "King of the Castle (Geelong)",
+      "scope": "Local",
+      "type": "Business"
+    },
+    {
+      "id": "3277",
+      "label": "La Madre Bakery",
+      "scope": "Local",
+      "type": "Business"
+    },
+    {
+      "id": "3699",
+      "label": "retrenched workers",
+      "scope": "Community",
+      "type": "Local Community"
+    },
+    {
+      "id": "3866",
+      "label": "State Emergency Service (SES)",
+      "scope": "State",
+      "type": "Police, Legal and Emergency Services"
+    }
+  ],
+  "edges": [
+    {
+      "id": "1001-2005",
+      "a": "1001",
+      "b": "2005",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1783019063:1",
+          "articleId": "1783019063",
+          "relationshipIndex": 1,
+          "title": "Renters get some good news",
+          "date": "2016-04-22",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Australian Government",
+          "sourceB": "Norlane residents",
+          "canonicalA": "Australian Government",
+          "canonicalB": "Norlane community",
+          "uidA": "1001",
+          "uidB": "2005",
+          "interaction": "cooperative",
+          "excerpt": "Minister for Regional Development Fiona Nash said the Australian Government was investing $7.25 million towards the project to provide Norlane with high quality, accessible social infrastructure.",
+          "relationship": "investing in social infrastructure",
+          "contextNote": "The passage names Norlane and the Australian Government; the extraction represents the place's residents as the Norlane community actor. It reports an investment, not a measured community outcome."
+        }
+      ]
+    },
+    {
+      "id": "1001-2296",
+      "a": "1001",
+      "b": "2296",
+      "counts": {
+        "cooperative": 2,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1680835413:1",
+          "articleId": "1680835413",
+          "relationshipIndex": 1,
+          "title": "Derelict school's rebirth",
+          "date": "2015-05-15",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Baptcare",
+          "sourceB": "Australian Government",
+          "canonicalA": "Baptcare",
+          "canonicalB": "Australian Government",
+          "uidA": "2296",
+          "uidB": "1001",
+          "interaction": "cooperative",
+          "excerpt": "Baptcare has bought the former Norlane Primary School site on Robin Ave and this week won $7.25 million in Commonwealth support.",
+          "relationship": "received support from"
+        }
+      ]
+    },
+    {
+      "id": "1001-2426",
+      "a": "1001",
+      "b": "2426",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1672366124:2",
+          "articleId": "1672366124",
+          "relationshipIndex": 2,
+          "title": "Boosting the war on drugs [Geelong Edition]",
+          "date": "2015-04-11",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Australian Government",
+          "sourceB": "Bridgelink Program",
+          "canonicalA": "Australian Government",
+          "canonicalB": "Bridgelink Program",
+          "uidA": "1001",
+          "uidB": "2426",
+          "interaction": "cooperative",
+          "excerpt": "TWO Geelong drug and alcohol treatment programs have received almost $100,000 each in Federal Government funding. The Bridgelink Program, which provides intensive case management to homeless women experiencing drug and alcohol-related issues, will receive $99,830.",
+          "relationship": "funding"
+        }
+      ]
+    },
+    {
+      "id": "1001-2750",
+      "a": "1001",
+      "b": "2750",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1672366124:1",
+          "articleId": "1672366124",
+          "relationshipIndex": 1,
+          "title": "Boosting the war on drugs [Geelong Edition]",
+          "date": "2015-04-11",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Australian Government",
+          "sourceB": "Eunike Program",
+          "canonicalA": "Australian Government",
+          "canonicalB": "Eunike Program",
+          "uidA": "1001",
+          "uidB": "2750",
+          "interaction": "cooperative",
+          "excerpt": "TWO Geelong drug and alcohol treatment programs have received almost $100,000 each in Federal Government funding. The Eunike Program, which provides a supported accommodation program for women seeking to maintain a substance-free lifestyle, will receive $99,830.",
+          "relationship": "funding"
+        }
+      ]
+    },
+    {
+      "id": "1004-2821",
+      "a": "1004",
+      "b": "2821",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1675010661:4",
+          "articleId": "1675010661",
+          "relationshipIndex": 4,
+          "title": "Lifting aspirations a work in progress [GeelongFeatureE Edition]",
+          "date": "2015-04-24",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Victorian State Government",
+          "sourceB": "G21 Region Opportunities for Work (GROW) program",
+          "canonicalA": "Victorian Government",
+          "canonicalB": "G21 Region Opportunities for Work (GROW) program",
+          "uidA": "1004",
+          "uidB": "2821",
+          "interaction": "cooperative",
+          "excerpt": "The State Government is going to assign $300 million to our region over the next four years and we want to use some of that to help create job opportunities in these areas.",
+          "relationship": "funding",
+          "contextNote": "This sentence mentions State Government funding, but does not name GROW. The GROW endpoint comes from the stored extraction; this sentence alone does not establish that pair. Original article context has not been verified."
+        }
+      ]
+    },
+    {
+      "id": "1004-2926",
+      "a": "1004",
+      "b": "2926",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1762175746:4",
+          "articleId": "1762175746",
+          "relationshipIndex": 4,
+          "title": "Tip fees waived in win for victims of deluge",
+          "date": "2016-02-04",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Victorian Government",
+          "sourceB": "Geelong flood victims",
+          "canonicalA": "Victorian Government",
+          "canonicalB": "Geelong flood victims",
+          "uidA": "1004",
+          "uidB": "2926",
+          "interaction": "cooperative",
+          "excerpt": "But Ms Couzens said the State Government had provided 11 grants (with a combined value of $11,000) in her electorate to help victims with immediate needs, such as food, water and shelter.",
+          "relationship": "provided grants to"
+        }
+      ]
+    },
+    {
+      "id": "1004-3067",
+      "a": "1004",
+      "b": "3067",
+      "counts": {
+        "cooperative": 16,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1677668618:3",
+          "articleId": "1677668618",
+          "relationshipIndex": 3,
+          "title": "$257m rail spend to boost jobs, service [Geelong Edition]",
+          "date": "2015-05-02",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Victorian Government",
+          "sourceB": "The Gordon",
+          "canonicalA": "Victorian Government",
+          "canonicalB": "The Gordon (TAFE)",
+          "uidA": "1004",
+          "uidB": "3067",
+          "interaction": "cooperative",
+          "excerpt": "The Waurn Ponds depot will boost education opportunities as the Government works with The Gordon to develop apprenticeship programs for train and tram engineers.",
+          "relationship": "partnership"
+        }
+      ]
+    },
+    {
+      "id": "2001-2072",
+      "a": "2001",
+      "b": "2072",
+      "counts": {
+        "cooperative": 25,
+        "antagonistic": 15,
+        "neutral": 5
+      },
+      "evidence": [
+        {
+          "id": "1761320902:2",
+          "articleId": "1761320902",
+          "relationshipIndex": 2,
+          "title": "Insurers count the cost of freak storm",
+          "date": "2016-01-30",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "City of Greater Geelong",
+          "sourceB": "Geelong residents",
+          "canonicalA": "City of Greater Geelong Council, Mayor and Staff",
+          "canonicalB": "Geelong community",
+          "uidA": "2072",
+          "uidB": "2001",
+          "interaction": "cooperative",
+          "excerpt": "\"I'd like to thank all council staff, including our administration support, involved in helping residents and local businesses get back on their feet after the storm,\" Cr Lyons said.",
+          "relationship": "helped"
+        }
+      ]
+    },
+    {
+      "id": "2001-3866",
+      "a": "2001",
+      "b": "3866",
+      "counts": {
+        "cooperative": 2,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1761320902:4",
+          "articleId": "1761320902",
+          "relationshipIndex": 4,
+          "title": "Insurers count the cost of freak storm",
+          "date": "2016-01-30",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "State Emergency Service Victoria (SES)",
+          "sourceB": "Geelong residents",
+          "canonicalA": "State Emergency Service (SES)",
+          "canonicalB": "Geelong community",
+          "uidA": "3866",
+          "uidB": "2001",
+          "interaction": "cooperative",
+          "excerpt": "The SES received more than 350 requests for assistance in the Geelong area as well as 15 calls for rescues due to the wild weather and flash floods.",
+          "relationship": "assisted",
+          "contextNote": "The source actor Geelong residents is normalised to the broader Geelong community node. The excerpt reports requests and rescue calls, not a count of completed rescues."
+        }
+      ]
+    },
+    {
+      "id": "2005-2296",
+      "a": "2005",
+      "b": "2296",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1783019063:3",
+          "articleId": "1783019063",
+          "relationshipIndex": 3,
+          "title": "Renters get some good news",
+          "date": "2016-04-22",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Baptcare",
+          "sourceB": "Norlane residents",
+          "canonicalA": "Baptcare",
+          "canonicalB": "Norlane community",
+          "uidA": "2296",
+          "uidB": "2005",
+          "interaction": "cooperative",
+          "excerpt": "The project is being funded by Baptcare and the Australian Government and should be completed by 2019.",
+          "relationship": "funding community project",
+          "contextNote": "The sentence identifies the project funders but does not name Norlane residents. That endpoint is supplied by the stored extraction and surrounding project context. The completion date is a reported plan. Bridgelink and Eunike are separate projects in the selected story context."
+        }
+      ]
+    },
+    {
+      "id": "2070-2821",
+      "a": "2070",
+      "b": "2821",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1735784305:1",
+          "articleId": "1735784305",
+          "relationshipIndex": 1,
+          "title": "Mithen lauds GROW plan",
+          "date": "2015-11-25",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "G21 Region Opportunities for Work (GROW) compact signatories",
+          "sourceB": "Geelong local businesses",
+          "canonicalA": "G21 Region Opportunities for Work (GROW) program",
+          "canonicalB": "Geelong Business Community",
+          "uidA": "2821",
+          "uidB": "2070",
+          "interaction": "cooperative",
+          "excerpt": "Twenty key regional organisations last week signed on to the G21 Region Opportunities for Work compact, committing to invest in local businesses and local people, and make inclusive jobs growth a priority.",
+          "relationship": "committing to invest",
+          "contextNote": "The source actor is the GROW compact signatories, grouped with the GROW program in the network. The passage describes a commitment to invest, rather than completed investment."
+        }
+      ]
+    },
+    {
+      "id": "2072-2821",
+      "a": "2072",
+      "b": "2821",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1824648512:3",
+          "articleId": "1824648512",
+          "relationshipIndex": 3,
+          "title": "Calling card for new jobs",
+          "date": "2016-09-30",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "City of Greater Geelong",
+          "sourceB": "G21 Region Opportunities for Work (GROW)",
+          "canonicalA": "City of Greater Geelong Council, Mayor and Staff",
+          "canonicalB": "G21 Region Opportunities for Work (GROW) program",
+          "uidA": "2072",
+          "uidB": "2821",
+          "interaction": "cooperative",
+          "excerpt": "The $1500 project, initiated and funded by the City of Greater Geelong, is a collaboration with Barwon Network of Neighbourhood Centres and G21 Region Opportunities for Work (GROW).",
+          "relationship": "collaborating on employment strategies"
+        }
+      ]
+    },
+    {
+      "id": "2072-2926",
+      "a": "2072",
+      "b": "2926",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1762175746:1",
+          "articleId": "1762175746",
+          "relationshipIndex": 1,
+          "title": "Tip fees waived in win for victims of deluge",
+          "date": "2016-02-04",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "City of Greater Geelong",
+          "sourceB": "Geelong flood victims",
+          "canonicalA": "City of Greater Geelong Council, Mayor and Staff",
+          "canonicalB": "Geelong flood victims",
+          "uidA": "2072",
+          "uidB": "2926",
+          "interaction": "cooperative",
+          "excerpt": "\"Residents will not be required to pay tip fees as part of this assistance program,\" council spokeswoman Kimberly Waters said.",
+          "relationship": "waived tip fees for",
+          "contextNote": "The passage says residents and council spokeswoman; the extraction supplies the City of Greater Geelong and Geelong flood victims endpoints from the article context."
+        }
+      ]
+    },
+    {
+      "id": "2072-3866",
+      "a": "2072",
+      "b": "3866",
+      "counts": {
+        "cooperative": 2,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1760932161:4",
+          "articleId": "1760932161",
+          "relationshipIndex": 4,
+          "title": "Tireless rescue crews get thumbs-up",
+          "date": "2016-01-29",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "council crews",
+          "sourceB": "State Emergency Service (Victoria)",
+          "canonicalA": "City of Greater Geelong Council, Mayor and Staff",
+          "canonicalB": "State Emergency Service (SES)",
+          "uidA": "2072",
+          "uidB": "3866",
+          "interaction": "cooperative",
+          "excerpt": "Eight council crews also helped the SES and worked to divert traffic and clear debris from council roads.",
+          "relationship": "helped",
+          "contextNote": "The source names council crews; these are mapped to the broader City of Greater Geelong Council, Mayor and Staff node. SES is the State Emergency Service node."
+        }
+      ]
+    },
+    {
+      "id": "2073-2074",
+      "a": "2073",
+      "b": "2074",
+      "counts": {
+        "cooperative": 7,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1704408552:1",
+          "articleId": "1704408552",
+          "relationshipIndex": 1,
+          "title": "Teamwork at heart of new project to create local jobs",
+          "date": "2015-08-18",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Give Where You Live Foundation",
+          "sourceB": "G21 (Geelong Region Alliance)",
+          "canonicalA": "Give Where You Live",
+          "canonicalB": "G21 Geelong Region Alliance",
+          "uidA": "2073",
+          "uidB": "2074",
+          "interaction": "cooperative",
+          "excerpt": "GROW is a joint initiative of the Give Where You Live Foundation and G21 -- Geelong Region Alliance.",
+          "relationship": "joint initiative"
+        }
+      ]
+    },
+    {
+      "id": "2073-2080",
+      "a": "2073",
+      "b": "2080",
+      "counts": {
+        "cooperative": 3,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1721945066:2",
+          "articleId": "1721945066",
+          "relationshipIndex": 2,
+          "title": "Donate your lunch money",
+          "date": "2015-10-15",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Give Where You Live",
+          "sourceB": "Feed Geelong",
+          "canonicalA": "Give Where You Live",
+          "canonicalB": "Feed Geelong",
+          "uidA": "2073",
+          "uidB": "2080",
+          "interaction": "cooperative",
+          "excerpt": "Feed Geelong, backed by Give Where You Live and the Geelong Advertiser, raises money for the city's emergency food relief network.",
+          "relationship": "backed by"
+        }
+      ]
+    },
+    {
+      "id": "2073-2771",
+      "a": "2073",
+      "b": "2771",
+      "counts": {
+        "cooperative": 2,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1718807195:4",
+          "articleId": "1718807195",
+          "relationshipIndex": 4,
+          "title": "Relief centres struggle",
+          "date": "2015-10-05",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Give Where You Live",
+          "sourceB": "FareShare",
+          "canonicalA": "Give Where You Live",
+          "canonicalB": "FareShare",
+          "uidA": "2073",
+          "uidB": "2771",
+          "interaction": "cooperative",
+          "excerpt": "She spoke as Give Where You Live, the Geelong Advertiser and food rescue organisation FareShare launched into a fifth annual Feed Geelong campaign, which runs during October.",
+          "relationship": "launched Feed Geelong campaign"
+        }
+      ]
+    },
+    {
+      "id": "2073-2821",
+      "a": "2073",
+      "b": "2821",
+      "counts": {
+        "cooperative": 2,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1646860439:5",
+          "articleId": "1646860439",
+          "relationshipIndex": 5,
+          "title": "Radical plan to help jobless [Geelong Edition]",
+          "date": "2015-01-21",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Give Where You Live",
+          "sourceB": "G21 Region Opportunities for Work (GROW) program",
+          "canonicalA": "Give Where You Live",
+          "canonicalB": "G21 Region Opportunities for Work (GROW) program",
+          "uidA": "2073",
+          "uidB": "2821",
+          "interaction": "cooperative",
+          "excerpt": "Give Where You Live has also pledged $2 million over 10 years.",
+          "relationship": "pledged funding",
+          "contextNote": "The pledge sentence names Give Where You Live, but does not identify its recipient. GROW is supplied by the stored extraction, not established by this sentence alone. Original article context has not been verified."
+        }
+      ]
+    },
+    {
+      "id": "2073-2928",
+      "a": "2073",
+      "b": "2928",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1722717086:2",
+          "articleId": "1722717086",
+          "relationshipIndex": 2,
+          "title": "Minimart swamped",
+          "date": "2015-10-17",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Geelong Food Relief Centre",
+          "sourceB": "Give Where You Live",
+          "canonicalA": "Geelong Food Relief Centre",
+          "canonicalB": "Give Where You Live",
+          "uidA": "2928",
+          "uidB": "2073",
+          "interaction": "cooperative",
+          "excerpt": "The campaign is backed by Give Where You Live and the Geelong Advertiser.",
+          "relationship": "supported by",
+          "contextNote": "This sentence names Give Where You Live but refers only to 'the campaign', not the Geelong Food Relief Centre. The Centre endpoint comes from the stored extraction; this sentence alone does not establish that pair. Original article context has not been verified."
+        }
+      ]
+    },
+    {
+      "id": "2074-2821",
+      "a": "2074",
+      "b": "2821",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1646860439:2",
+          "articleId": "1646860439",
+          "relationshipIndex": 2,
+          "title": "Radical plan to help jobless [Geelong Edition]",
+          "date": "2015-01-21",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "G21 Region Opportunities for Work (GROW) program",
+          "sourceB": "G21 region councils",
+          "canonicalA": "G21 Region Opportunities for Work (GROW) program",
+          "canonicalB": "G21 Geelong Region Alliance",
+          "uidA": "2821",
+          "uidB": "2074",
+          "interaction": "cooperative",
+          "excerpt": "The GROW program is a partnership between the five G21 region councils with financial assistance from the Alcoa Foundation and State Government.",
+          "relationship": "partnership"
+        }
+      ]
+    },
+    {
+      "id": "2080-2727",
+      "a": "2080",
+      "b": "2727",
+      "counts": {
+        "cooperative": 2,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1718807360:1",
+          "articleId": "1718807360",
+          "relationshipIndex": 1,
+          "title": "Campaign launched",
+          "date": "2015-10-05",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Feed Geelong",
+          "sourceB": "Geelong emergency food relief agencies",
+          "canonicalA": "Feed Geelong",
+          "canonicalB": "Geelong emergency food relief agencies",
+          "uidA": "2080",
+          "uidB": "2727",
+          "interaction": "cooperative",
+          "excerpt": "Organisers have set $40,000 as a target total to go towards supporting the city's emergency food relief agencies.",
+          "relationship": "supporting",
+          "contextNote": "The sentence mentions organisers and food-relief agencies, but does not name Feed Geelong. That endpoint comes from the stored extraction, not this sentence alone. Original article context has not been verified."
+        }
+      ]
+    },
+    {
+      "id": "2080-3271",
+      "a": "2080",
+      "b": "3271",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1718120609:1",
+          "articleId": "1718120609",
+          "relationshipIndex": 1,
+          "title": "Soups a big serve of city humanity",
+          "date": "2015-10-02",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "King of the Castle cafe",
+          "sourceB": "Feed Geelong",
+          "canonicalA": "King of the Castle (Geelong)",
+          "canonicalB": "Feed Geelong",
+          "uidA": "3271",
+          "uidB": "2080",
+          "interaction": "cooperative",
+          "excerpt": "The cafe donated 20 litres of Thai pumpkin and lentil and vegetable soups, with each $5 sale going to Feed Geelong, which raises money for the city's charity food supply network.",
+          "relationship": "donated soup and proceeds",
+          "contextNote": "The sentence calls the donor 'the cafe'; the stored extraction identifies King of the Castle cafe from the article context."
+        }
+      ]
+    },
+    {
+      "id": "2080-3277",
+      "a": "2080",
+      "b": "3277",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1718120609:3",
+          "articleId": "1718120609",
+          "relationshipIndex": 3,
+          "title": "Soups a big serve of city humanity",
+          "date": "2015-10-02",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "La Madre Bakery",
+          "sourceB": "Feed Geelong",
+          "canonicalA": "La Madre Bakery",
+          "canonicalB": "Feed Geelong",
+          "uidA": "3277",
+          "uidB": "2080",
+          "interaction": "cooperative",
+          "excerpt": "Soup made and donated by Truffleduck, DAL and Karingal's Seasons catering, and bread donated by La Madre Bakery, also sold at Feed Geelong stalls at Deakin University's waterfront campus and in Little Malop St Mall.",
+          "relationship": "donated bread"
+        }
+      ]
+    },
+    {
+      "id": "2082-2928",
+      "a": "2082",
+      "b": "2928",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1797805887:3",
+          "articleId": "1797805887",
+          "relationshipIndex": 3,
+          "title": "Grants to help our local needy",
+          "date": "2016-06-20",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Geelong Community Foundation",
+          "sourceB": "Geelong Food Relief Centre",
+          "canonicalA": "Geelong Community Foundation",
+          "canonicalB": "Geelong Food Relief Centre",
+          "uidA": "2082",
+          "uidB": "2928",
+          "interaction": "cooperative",
+          "excerpt": "Organisations to benefit include Geelong Food Relief Centre.",
+          "relationship": "funding",
+          "contextNote": "The beneficiary is named, but the Geelong Community Foundation is not named in this sentence. The Foundation endpoint comes from the stored extraction; this sentence alone does not establish that pair. Original article context has not been verified."
+        }
+      ]
+    },
+    {
+      "id": "2123-3067",
+      "a": "2123",
+      "b": "3067",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1675047556:1",
+          "articleId": "1675047556",
+          "relationshipIndex": 1,
+          "title": "The Gordon key in turning work future [Geelong Edition]",
+          "date": "2015-04-24",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "The Gordon (TAFE)",
+          "sourceB": "Alcoa workers",
+          "canonicalA": "The Gordon (TAFE)",
+          "canonicalB": "Alcoa workers",
+          "uidA": "3067",
+          "uidB": "2123",
+          "interaction": "cooperative",
+          "excerpt": "In 2014, The Gordon worked with Alcoa workers to plan for their future career pathways.",
+          "relationship": "worked with"
+        }
+      ]
+    },
+    {
+      "id": "2644-3067",
+      "a": "2644",
+      "b": "3067",
+      "counts": {
+        "cooperative": 4,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1675047556:2",
+          "articleId": "1675047556",
+          "relationshipIndex": 2,
+          "title": "The Gordon key in turning work future [Geelong Edition]",
+          "date": "2015-04-24",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "The Gordon (TAFE)",
+          "sourceB": "Deakin University",
+          "canonicalA": "The Gordon (TAFE)",
+          "canonicalB": "Deakin University",
+          "uidA": "3067",
+          "uidB": "2644",
+          "interaction": "cooperative",
+          "excerpt": "With the shift to a more knowledge-based economy for Geelong, the longstanding partnership between The Gordon and Deakin University is critical to providing our community with the higher level skills required for the jobs of the future.",
+          "relationship": "partnership"
+        }
+      ]
+    },
+    {
+      "id": "2796-3067",
+      "a": "2796",
+      "b": "3067",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1826318315:3",
+          "articleId": "1826318315",
+          "relationshipIndex": 3,
+          "title": "Workers making transition to future",
+          "date": "2016-10-07",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Gordon TAFE",
+          "sourceB": "Ford Transition Project",
+          "canonicalA": "The Gordon (TAFE)",
+          "canonicalB": "Ford Transition Project",
+          "uidA": "3067",
+          "uidB": "2796",
+          "interaction": "cooperative",
+          "excerpt": "The Ford Transition Project, backed by Auto Skills Australia, $5 million Federal Government funding and support from Gordon TAFE has involved case managing more than 300 workers, aiming to help many recognise their skills for future employment and find additional skills where necessary.",
+          "relationship": "supporting",
+          "contextNote": "The report describes the Ford Transition Project and Gordon TAFE support. Its case-management figure refers to the project as a whole, not an outcome attributed to The Gordon alone."
+        }
+      ]
+    },
+    {
+      "id": "3066-3067",
+      "a": "3066",
+      "b": "3067",
+      "counts": {
+        "cooperative": 1,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1841894985:2",
+          "articleId": "1841894985",
+          "relationshipIndex": 2,
+          "title": "Tech school architects chosen",
+          "date": "2016-11-22",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Geelong Tech School",
+          "sourceB": "The Gordon Institute",
+          "canonicalA": "Geelong Tech School",
+          "canonicalB": "The Gordon (TAFE)",
+          "uidA": "3066",
+          "uidB": "3067",
+          "interaction": "cooperative",
+          "excerpt": "The Geelong Tech School will be operated by The Gordon Institute.",
+          "relationship": "operated by"
+        }
+      ]
+    },
+    {
+      "id": "3067-3699",
+      "a": "3067",
+      "b": "3699",
+      "counts": {
+        "cooperative": 2,
+        "antagonistic": 0,
+        "neutral": 0
+      },
+      "evidence": [
+        {
+          "id": "1658944102:2",
+          "articleId": "1658944102",
+          "relationshipIndex": 2,
+          "title": "Healthy future ahead [Geelong Edition]",
+          "date": "2015-02-28",
+          "publication": "Nationwide News Pty Ltd",
+          "sourceA": "Geelong Workforce Development Centre",
+          "sourceB": "retrenched workers",
+          "canonicalA": "The Gordon (TAFE)",
+          "canonicalB": "retrenched workers",
+          "uidA": "3067",
+          "uidB": "3699",
+          "interaction": "cooperative",
+          "excerpt": "The WDC -- set up as part of the Victorian Government's $11 million Skilling the Bay initiative -- assists retrenched workers and their families with advice, information and counselling on careers, retraining and job opportunities.",
+          "relationship": "assists",
+          "contextNote": "The passage refers to 'WDC'; the stored actor name expands this as Geelong Workforce Development Centre and maps it to The Gordon. The excerpt does not itself establish that institutional equivalence."
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "food-support",
+      "title": "The network behind food support",
+      "kicker": "01 / COMMUNITY INFRASTRUCTURE",
+      "description": "A foundation, a fundraising campaign and food-relief organisations appear together in reporting about support for Geelong people. Cafes and a bakery widen this picture of local participation.",
+      "takeaway": "Food support brings charities, local businesses and relief organisations into a shared local effort.",
+      "edgeIds": [
+        "2073-2080",
+        "2080-2727",
+        "2073-2771"
+      ],
+      "contextEdgeIds": [
+        "2082-2928",
+        "2073-2928",
+        "2080-3271",
+        "2080-3277"
+      ],
+      "nodeIds": [
+        "2073",
+        "2080",
+        "2727",
+        "2771"
+      ],
+      "steps": [
+        {
+          "title": "Start with one reported connection",
+          "text": "Give Where You Live and Feed Geelong are linked in the stored reporting. Select the line to read an example.",
+          "edgeIds": [
+            "2073-2080"
+          ]
+        },
+        {
+          "title": "Follow the food-relief network",
+          "text": "Feed Geelong's campaign reporting describes support for the city's emergency food relief agencies. The wider context includes the Food Relief Centre and Community Foundation.",
+          "edgeIds": [
+            "2080-2727"
+          ]
+        },
+        {
+          "title": "Organisations join a campaign",
+          "text": "Give Where You Live and FareShare appear together in the launch of the annual Feed Geelong campaign. Select their relationship to read the report.",
+          "edgeIds": [
+            "2073-2080",
+            "2073-2771"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education-workers",
+      "title": "Education, government and workers",
+      "kicker": "02 / INSTITUTIONAL CONNECTIONS",
+      "description": "The Gordon connects government, another education institution and groups of workers in reporting about skills and career transitions. Context adds the Geelong Tech School and a worker-transition project.",
+      "takeaway": "Education institutions connect public investment with people preparing for changing work.",
+      "edgeIds": [
+        "1004-3067",
+        "2644-3067",
+        "3067-3699"
+      ],
+      "contextEdgeIds": [
+        "2123-3067",
+        "3066-3067",
+        "2796-3067"
+      ],
+      "nodeIds": [
+        "1004",
+        "2644",
+        "3067",
+        "3699"
+      ],
+      "steps": [
+        {
+          "title": "An education–government connection",
+          "text": "A May 2015 passage describes government working with The Gordon on apprenticeship programs for train and tram engineers.",
+          "edgeIds": [
+            "1004-3067"
+          ]
+        },
+        {
+          "title": "Institutions meet worker groups",
+          "text": "The reporting describes a longstanding Gordon–Deakin partnership and career advice for retrenched workers through the Workforce Development Centre, mapped to The Gordon in this network.",
+          "edgeIds": [
+            "2644-3067",
+            "3067-3699"
+          ]
+        },
+        {
+          "title": "Career pathways in a changing economy",
+          "text": "The Gordon worked with Alcoa workers to plan future career pathways. The surrounding context also connects it with the Geelong Tech School and the Ford Transition Project.",
+          "edgeIds": [
+            "2123-3067"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grow-partnership",
+      "title": "Partnerships around GROW",
+      "kicker": "03 / CROSS-ORGANISATIONAL TIES",
+      "description": "Follow a small selection around GROW, Give Where You Live and G21. The reporting describes a joint initiative across organisational boundaries.",
+      "takeaway": "Local organisations, public institutions and business commitments come together around a shared jobs initiative.",
+      "edgeIds": [
+        "2073-2074",
+        "2073-2821",
+        "2074-2821"
+      ],
+      "contextEdgeIds": [
+        "1004-2821",
+        "2072-2821",
+        "2070-2821"
+      ],
+      "nodeIds": [
+        "2073",
+        "2074",
+        "2821"
+      ],
+      "steps": [
+        {
+          "title": "A joint initiative",
+          "text": "An August 2015 excerpt describes GROW as a joint initiative of Give Where You Live and G21. Read the words behind their connection.",
+          "edgeIds": [
+            "2073-2074"
+          ]
+        },
+        {
+          "title": "The program in the network",
+          "text": "GROW appears as a distinct actor alongside its partners. The records describe a partnership and a funding pledge around a shared jobs initiative.",
+          "edgeIds": [
+            "2073-2821",
+            "2074-2821"
+          ]
+        },
+        {
+          "title": "A wider circle of participation",
+          "text": "A 2016 report describes a council-funded employment project with GROW and neighbourhood centres. The wider context also records compact signatories committing to invest in local businesses and people.",
+          "edgeIds": [
+            "2072-2821"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "national-local",
+      "title": "National support, local places",
+      "kicker": "04 / NATIONAL TO LOCAL",
+      "description": "Reporting about a Norlane redevelopment links Australian Government support, Baptcare and the Norlane community. Nearby selected ties show other federal commitments to local support programs.",
+      "takeaway": "National institutions become part of a local network through specific commitments to organisations and places.",
+      "edgeIds": [
+        "1001-2296",
+        "1001-2005",
+        "2005-2296"
+      ],
+      "contextEdgeIds": [
+        "1001-2426",
+        "1001-2750"
+      ],
+      "nodeIds": [
+        "1001",
+        "2005",
+        "2296"
+      ],
+      "steps": [
+        {
+          "title": "A national commitment to a local site",
+          "text": "A May 2015 report says Baptcare bought the former Norlane Primary School site and won $7.25 million in Commonwealth support. The Australian Government and Baptcare occupy different scope bands.",
+          "edgeIds": [
+            "1001-2296"
+          ]
+        },
+        {
+          "title": "The community named in the report",
+          "text": "An April 2016 report describes Australian Government investment in accessible social infrastructure for Norlane. The extraction represents Norlane residents with the Norlane community node.",
+          "edgeIds": [
+            "1001-2005"
+          ]
+        },
+        {
+          "title": "Local organisations and community places",
+          "text": "The same 2016 report identifies Baptcare and the Australian Government as funders of the planned project. Separate commitments to Bridgelink and Eunike widen the picture of national support for local services.",
+          "edgeIds": [
+            "2005-2296",
+            "1001-2296"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flood-support",
+      "title": "Helping people after the flood",
+      "kicker": "05 / COMMUNITY RESPONSE",
+      "description": "Reports after Geelong's 27 January 2016 flood describe crews working together, residents seeking assistance and practical support for people facing immediate needs.",
+      "takeaway": "Cooperation becomes tangible in rescue requests, clean-up work and help with the costs of recovery.",
+      "edgeIds": [
+        "2072-3866",
+        "2001-3866",
+        "2072-2926"
+      ],
+      "contextEdgeIds": [
+        "1004-2926",
+        "2001-2072"
+      ],
+      "nodeIds": [
+        "2001",
+        "2072",
+        "2926",
+        "3866"
+      ],
+      "steps": [
+        {
+          "title": "Crews work together",
+          "text": "On 29 January, the reporting describes eight council crews helping the SES divert traffic and clear debris from council roads.",
+          "edgeIds": [
+            "2072-3866"
+          ]
+        },
+        {
+          "title": "Residents seek help",
+          "text": "A 30 January report records more than 350 requests for SES assistance in the Geelong area and 15 rescue calls during the wild weather and flash floods. The source's Geelong residents are mapped to the community node.",
+          "edgeIds": [
+            "2001-3866"
+          ]
+        },
+        {
+          "title": "Practical help with recovery",
+          "text": "A 4 February report says residents would not pay tip fees under an assistance program. Its selected context also records state grants for immediate needs such as food, water and shelter.",
+          "edgeIds": [
+            "2072-2926"
+          ]
+        }
+      ]
+    }
+  ]
+}

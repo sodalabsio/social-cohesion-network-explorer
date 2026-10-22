@@ -1,0 +1,10 @@
+# Local-only development documentation; do not force-add these files.
+/DEV-NOTES.local.md
+/private/
+
+# Generated website (deploy dist/ as a Pages artifact, not as source).
+/dist/
+
+# Local dependencies and operating-system files.
+node_modules/
+.DS_Store

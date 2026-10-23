@@ -81,7 +81,11 @@ try {
  // Camera framing never recomputes positions; the locator always shows every node.
  function camera(){if(state.mode==='time'||state.view==='overview')return{x:0,y:0,w:1,h:1};const ns=shownIds().map(id=>nodes.get(id));const xs=ns.map(n=>n.x),ys=ns.map(n=>n.y);let w=Math.max(.26,Math.max(...xs)-Math.min(...xs)+.18),h=Math.max(.34,Math.max(...ys)-Math.min(...ys)+.22);w=Math.min(1,w);h=Math.min(1,h);return{x:Math.max(0,Math.min(1-w,(Math.min(...xs)+Math.max(...xs)-w)/2)),y:Math.max(0,Math.min(1-h,(Math.min(...ys)+Math.max(...ys)-h)/2)),w,h};}
  const project=(n,w,h,c)=>{
-   const top=state.mode==='time'?40:h<160?18:53,span=state.mode==='time'?Math.max(20,h-60):h<160?Math.max(4,h-34):Math.max(20,h-155);
+   // Reserve only the caption and a small lower margin, not a fixed 155px
+   // label shelf. Callouts already search for free space around real anchors.
+   const top=h<160?18:46;
+   const bottom=h<160?16:24;
+   const span=Math.max(4,h-top-bottom);
    return{x:28+(n.x-c.x)/c.w*(w-56),y:top+(n.y-c.y)/c.h*span};
  };
  function pathFor(a,b){if(Math.abs(a.y-b.y)<28){const rise=Math.max(18,Math.min(85,Math.abs(a.x-b.x)*.2));return`M${a.x},${a.y} Q${(a.x+b.x)/2},${Math.min(a.y,b.y)-rise} ${b.x},${b.y}`;}return`M${a.x},${a.y} C${a.x},${(a.y+b.y)/2} ${b.x},${(a.y+b.y)/2} ${b.x},${b.y}`;}
@@ -108,17 +112,18 @@ try {
  if(state.mode==='time'){temporal?.renderGraph(svg,w,h);return;}
  svg.setAttribute('role','group');delete svg.dataset.week;delete svg.dataset.windowNodes;delete svg.dataset.windowPairs;svg.append(sv('title',{},`${story().title}, highlighted within ${fmt(displayNodes.length)} displayed actors`),sv('desc',{},'Actor positions follow Federal, State, Local and Community scope bands. Leader lines connect labels to their network positions. Highlighted relationships and the matching buttons in the Story panel open the news excerpts.'));const mc=$('network-minimap');drawCanvas(mc,mc.clientWidth||146,mc.clientHeight||75,c,true);
  const scopeLabels=[];
- displayScopes.forEach((scope,i)=>{const y=project({x:0,y:i/displayScopes.length},w,h,c).y;if(y>=(h<160?12:35)&&y<=h-12){scopeLabels.push({scope,y});svg.append(sv('line',{x1:12,y1:y,x2:w-12,y2:y,class:'scope-rule'}));}});
+ displayScopes.forEach((scope,i)=>{const y=project({x:0,y:i/displayScopes.length},w,h,c).y;if(y>=(h<160?12:24)&&y<=h-12){scopeLabels.push({scope,y});svg.append(sv('line',{x1:12,y1:y,x2:w-12,y2:y,class:'scope-rule'}));}});
  const shown=shownEdges(),ids=shownIds(),positions=new Map(ids.map(id=>[id,project(nodes.get(id),w,h,c)]));
  for(const e of shown){const a=positions.get(String(e.a)),b=positions.get(String(e.b));const selected=e.id===state.selectedEdge;const g=sv('g',{class:`edge-group${selected?' is-selected':''}${step().edgeIds.includes(e.id)?' is-emphasised':''}${story().edgeIds.includes(e.id)?'':' is-context'}`,'data-edge-id':e.id,role:'button',tabindex:0,'aria-label':`${pair(e)}${story().contextEdgeIds.includes(e.id)?'. Story context':''}. ${graphTypes.filter(t=>e.counts[t]>0).join(' and ')} records. Read evidence.`,'aria-pressed':String(selected)});g.append(sv('title',{},pair(e)));for(const t of graphTypes.filter(t=>e.counts[t]>0)){const offset=classificationOffset(e,t,a,b,3);g.append(sv('path',{d:pathFor(a,b),transform:`translate(${offset.x} ${offset.y})`,class:`edge-line ${t}`}));}g.append(sv('path',{d:pathFor(a,b),class:'edge-hit'}));g.addEventListener('click',event=>selectNearestEdge(event,e.id));g.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();selectEdge(e.id);}});svg.append(g);}
  // Callouts are obstacles, not replacements for actor anchors. Test candidate
  // rectangles against every anchor, sampled highlighted path and scope caption.
  const boxW=Math.min(146,Math.max(110,w*.38)),boxH=60,slots=[];
+ const locatorVisible=document.querySelector('.overview-map').getClientRects().length>0;
  const pathPoints=[...svg.querySelectorAll('.edge-hit')].flatMap(path=>{const length=path.getTotalLength();return Array.from({length:101},(_,i)=>path.getPointAtLength(length*i/100));});
  const inside=(p,s,pad=0)=>p.x>=s.x-pad&&p.x<=s.x+boxW+pad&&p.y>=s.y-pad&&p.y<=s.y+boxH+pad;
  for(let y=48;y+boxH<h-14;y+=14)for(let x=12;x+boxW<w-12;x+=14){
    const s={x,y};
-   if(x+boxW>w-180&&y+boxH>h-115)continue;
+   if(locatorVisible&&x+boxW>w-180&&y+boxH>h-115)continue;
    if([...positions.values()].some(p=>inside(p,s,18)))continue;
    if(pathPoints.some(p=>inside(p,s,7)))continue;
    if(scopeLabels.some(l=>x<110&&y<l.y+5&&y+boxH>l.y-20))continue;
@@ -127,6 +132,8 @@ try {
  const occupied=[],selected=edges.get(state.selectedEdge);
  const ordered=[...ids].sort((a,b)=>{const selectedA=[String(selected?.a),String(selected?.b)].includes(a),selectedB=[String(selected?.a),String(selected?.b)].includes(b);return Number(selectedB)-Number(selectedA)||positions.get(a).x-positions.get(b).x;});
  for(const id of ordered){
+   // Keep the two selected endpoints as the phone's callout priority.
+   if(w<=600&&![String(selected?.a),String(selected?.b)].includes(id))continue;
    const n=nodes.get(id),p=positions.get(id);let best=null,cost=Infinity;
    for(const s of slots){if(occupied.some(o=>s.x<o.x+boxW+8&&s.x+boxW+8>o.x&&s.y<o.y+boxH+8&&s.y+boxH+8>o.y))continue;const d=(s.x+boxW/2-p.x)**2+(s.y+boxH/2-p.y)**2;if(d<cost){best=s;cost=d;}}
    if(!best)continue; // On tiny screens keep anchors/lines, not overlapping labels.
@@ -163,11 +170,15 @@ try {
  const tourOpen=()=>!$('tour').hidden;
  function revealTourTarget(){
    const targets=[...document.querySelectorAll(tourSteps[tourIndex].target)].filter(n=>n.getClientRects().length);
-   const host=targets[0]?.closest('.panel-scroll, #network-panel');if(!host)return;
-   const bounds=host.getBoundingClientRect(),rects=targets.map(n=>n.getBoundingClientRect());
-   const top=Math.min(...rects.map(r=>r.top)),bottom=Math.max(...rects.map(r=>r.bottom));
-   if(top<bounds.top||bottom-top>host.clientHeight)host.scrollTop+=top-bounds.top;
-   else if(bottom>bounds.bottom)host.scrollTop+=bottom-bounds.bottom;
+   // Compact layouts scroll the exhibit; larger layouts scroll individual
+   // panels. Reveal the target through every actual scrolling ancestor.
+   for(let host=targets[0]?.parentElement;host;host=host.parentElement){
+     if(!['auto','scroll'].includes(getComputedStyle(host).overflowY))continue;
+     const bounds=host.getBoundingClientRect(),rects=targets.map(n=>n.getBoundingClientRect());
+     const top=Math.min(...rects.map(r=>r.top)),bottom=Math.max(...rects.map(r=>r.bottom));
+     if(top<bounds.top-1||bottom-top>host.clientHeight)host.scrollTop+=top-bounds.top;
+     else if(bottom>bounds.bottom+1)host.scrollTop+=bottom-bounds.bottom;
+   }
  }
  function positionTour(){
    if(!tourOpen())return;
@@ -216,7 +227,7 @@ try {
  }
  function startTour(){
    if(tourOpen())return;
-   tourReturnFocus=document.activeElement;tourOriginalView={mode:state.mode,week:temporal.getIndex(),mobile:state.mobileView,camera:state.view,networkScroll:$('network-panel').scrollTop};
+   tourReturnFocus=document.activeElement;tourOriginalView={mode:state.mode,week:temporal.getIndex(),mobile:state.mobileView,camera:state.view,networkScroll:$('network-panel').scrollTop,exhibitScroll:$('exhibit').scrollTop};
    temporal.pause();
    if(state.mode==='time')setMode('stories');
    state.view='overview';setMobileView('network');
@@ -228,6 +239,7 @@ try {
    if(tourOriginalView){
      state.view=tourOriginalView.camera;temporal.setIndex(tourOriginalView.week);setMode(tourOriginalView.mode);setMobileView(tourOriginalView.mobile);
      $('network-panel').scrollTop=tourOriginalView.networkScroll;
+     $('exhibit').scrollTop=tourOriginalView.exhibitScroll;
    }
    const focus=tourReturnFocus&&tourReturnFocus!==document.body&&tourReturnFocus.isConnected?tourReturnFocus:$('open-tour');focus.focus({preventScroll:true});
  }
@@ -254,6 +266,14 @@ try {
    announce(mode==='time'?'Network over time. Use Play or the weekly slider to explore.':'Network stories. Your story and step are preserved.');
  }
  temporal=await createTimeline({full,nodes,project,pathFor,sv,onRender:renderGraph,announce});
+ // Native details preserve keyboard/screen-reader operation. Collapse prose
+ // on small/short screens; resize only at a breakpoint, not on every frame.
+ const compactControls=matchMedia('(max-width:600px), (max-width:1000px) and (max-height:500px)');
+ const sizeDisclosures=()=>{
+   $('step-details').open=!compactControls.matches;
+   $('time-intro').open=!compactControls.matches;
+ };
+ sizeDisclosures();compactControls.addEventListener('change',sizeDisclosures);
  tourSteps.forEach(t=>document.querySelectorAll(t.target).forEach(n=>tourObserver.observe(n)));
  $('mode-stories').addEventListener('click',()=>setMode('stories'));$('mode-time').addEventListener('click',()=>setMode('time'));
  renderCards();provenance();let initial='';try{initial=decodeURIComponent(location.hash.slice(1));}catch{/* Ignore malformed links. */}const index=data.stories.findIndex(s=>s.id===initial);$('load-status').hidden=true;$('exhibit').hidden=false;$('exhibit').dataset.mode='stories';chooseStory(index<0?0:index,false);new ResizeObserver(()=>{renderGraph();queueTourPosition();}).observe($('graph-stage'));$('exhibit').dataset.ready='true';startTour();
